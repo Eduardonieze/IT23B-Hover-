@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="https://www.facebook.com/">
+  <img src="https://cdn.pixabay.com/animation/2022/08/03/02/53/02-53-46-792_512.gif" alt="Avatar" class="image">
+  <div class="overlay">Facebook</div>
+</div>
+<div class="container">
+  <a href="https://www.messenger.com/">
+  <img src="https://cdn.dribbble.com/users/144860/screenshots/3464815/reasons-4.gif" alt="Avatar" class="image">
+  <div class="overlay">Messenger</div>
+</div>
+<div class="container">
+  <a href="https://www.youtube.com/">
+  <img src="https://i.gifer.com/74H4.gif" alt="Avatar" class="image">
+  <div class="overlay">Youtube</div>
+</div>
+<div class="container">
+  <a href="https://www.instagram.com/accounts/login/">
+  <img src="https://i.pinimg.com/originals/9c/e6/6a/9ce66a7e1727003ea9351dd7a94ea121.gif" alt="Avatar" class="image">
+  <div class="overlay">Instragram</div>
+</div>
+
+</body>
+</html>
